@@ -1,0 +1,175 @@
+<html>
+<head>
+    <title>Brew & Bean Café</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d2a679;
+        }
+
+        header {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: brown;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .page {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #home {
+            display: block;
+        }
+
+        :target {
+            display: block;
+        }
+
+        .box {
+            background: white;
+            width: 360px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .item img {
+            width: 70px;
+            border-radius: 8px;
+            margin: 0 10px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        button {
+            background: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+
+        .success {
+            color: green;
+        }
+
+        i {
+            margin-right: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1><i class="fa-solid fa-mug-hot"></i> Brew & Bean Café</h1>
+</header>
+
+<nav>
+    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#menu"><i class="fa-solid fa-utensils"></i> Menu</a>
+</nav>
+
+<div id="home" class="page">
+    <h2><i class="fa-solid fa-handshake"></i> Welcome!</h2>
+    <p>Enjoy delicious coffee</p>
+</div>
+
+<div id="menu" class="page">
+    <div class="box">
+        <h2><i class="fa-solid fa-mug-hot"></i> Select Coffee</h2>
+
+        <div class="item">
+            <input type="radio" name="coffee">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG">
+            Espresso (Rs30)
+        </div>
+
+        <div class="item">
+            <input type="radio" name="coffee">
+            <img src="C:\Users\ADMIN\Desktop\latte2.jfif">
+            Latte (Rs40)
+        </div>
+
+        <div class="item">
+            <input type="radio" name="coffee">
+            <img src="C:\Users\ADMIN\Desktop\cuup 2.jfif">
+            Cappuccino (Rs50)
+        </div>
+
+        <h3><i class="fa-solid fa-plus"></i> Add-ons</h3>
+        <input type="checkbox"> Milk<br>
+        <input type="checkbox"> Caramel<br>
+        <input type="checkbox"> Cream<br>
+
+        <h3><i class="fa-solid fa-list-ol"></i> Quantity</h3>
+        <input type="number" value="1"><br><br>
+
+        <a href="#summary">
+            <button><i class="fa-solid fa-arrow-right"></i> Next</button>
+        </a>
+    </div>
+</div>
+
+<div id="summary" class="page">
+    <div class="box">
+        <h2><i class="fa-solid fa-receipt"></i> Order Summary</h2>
+        <p><b>Coffee:</b> Selected Coffee</p>
+        <p><b>Add-ons:</b> Selected Add-ons</p>
+        <p><b>Quantity:</b> 1</p>
+
+        <a href="#success">
+            <button><i class="fa-solid fa-check"></i> Confirm</button>
+        </a>
+    </div>
+</div>
+
+<div id="success" class="page">
+    <div class="box success">
+        <h2><i class="fa-solid fa-circle-check"></i> Order Placed Successfully!</h2>
+        <p>Thank you for visiting</p>
+
+        <a href="#home">
+            <button><i class="fa-solid fa-house"></i> Home</button>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
